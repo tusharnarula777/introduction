@@ -1,0 +1,445 @@
+
+  body{display: grid;
+    grid-template-areas:
+  "header"
+  "first"
+  "about"
+  "skills"
+  "achievement"
+  "contact"
+  "footer";
+
+}
+*{    scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+}
+.first-section
+{ grid-area: first;
+  padding: 180px;
+  background-image: url(resources/images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first-section-para1
+{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+
+}
+.first-section-para2
+{
+  font-size: 50px;
+  color: white;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  padding:15px;
+}
+
+.first-section-para3
+{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding:40px;
+}
+
+.sec-about{
+  grid-area: about;
+  background-image: url(resources/images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px 150px 130px 150px;
+  position: relative;
+}
+.sec-about-image
+{
+  height:250px;
+  width:250px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  top: 125px;
+  right: 20px;
+  opacity: 0.5;
+}
+.sec-about-image:hover
+{
+  border: 2px solid white;
+  border-radius: 0px;
+  background-color: blue;
+  opacity: 1;
+}
+.sec-about-heading
+{ font-size: 60px;
+  color: rgb(204,109,42);
+  margin: 10px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.sec-about-para
+{
+  color: white;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 26px;
+}
+.sec-about-hl
+{
+  border-bottom: 3px solid white;
+  width: 100%;
+  padding: 10px 0;
+}
+.sec-about-kite1-para1
+{
+  color: white;
+  font-size: 25px;
+  padding: 1rem 1rem 1rem 8rem;
+}
+/*.sec-about-kite
+{
+  background-color: red;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.sec-about-kite-space
+{
+  margin: 0 ;
+}*/
+.fa
+{ font-size: 150%;
+  height: 40px;
+  width: 80px;
+  margin-left: 112px;
+  padding: 1rem 1rem 0rem 1rem;
+  color: white;
+}
+.fa:hover
+{
+  color:rgb(204,109,42);
+  cursor: pointer;
+}
+.sec-about-kite1-para2
+{
+  color: white;
+  font-size: 25px;
+padding: 1rem 1rem 1rem 5rem;
+}
+.sec-skills{
+  grid-area: skills;
+  font-size: 40px;
+  color: white;
+  padding: 0px 150px 150px 150px;
+  background: linear-gradient(to bottom right, blue, pink);
+  margin: 0;
+}
+.sec-skills-list
+{
+display: flex;
+list-style: none;
+justify-content: center;
+}
+.sec-skills-list-li
+{
+  display: flex;
+
+}
+.sec-skills-image
+{
+  overflow: hidden;
+}
+.sec-skills-image img
+{ transition: all 1s ease-out;
+  display: flex;
+  height:200px;
+  width: 200px;
+  transform: scale(1.22);
+  transition: .5s;
+  opacity: .5;
+}
+.sec-skills-heading
+{
+    font-size: 60px;
+    color: rgb(204,161,42);
+    margin: 10px;
+    padding-top: 135px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.sec-skills-image img:hover
+{
+  transform: scale(1);
+  opacity: 1
+}
+.sec-achievement
+{ padding: 0px 150px 300px 150px;
+  grid-area: achievement;
+  background-image: url(resources/images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.sec-achievement-heading
+{
+  font-size: 60px;
+  color:rgb(8,114,22);
+  margin: 10px;
+  padding-top: 135px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.sec-achievement-internships-title
+{
+  color: white;
+  font-size: 20px;
+}
+.sec-achievement-internships-title a
+{
+  color: rgb(237,225,40);
+}
+.sec-achievement-sub-heading
+{
+  color: rgb(125,216,6);
+  font-size: 40px;
+}
+.sec-achievement-table
+{
+  padding: 5px;
+}
+.sec-achievement-table-data
+{ padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+.sec-achievement-table-heading
+{ padding: 10px;
+  font-size: 20px;
+  color: rgb(7,249,213);
+}
+.sec-achievement-image-1
+{ position: absolute;
+  top: 400px;
+  right: 420px;
+  height: 80px;
+  width: 80px;
+}
+.sec-achievement-image-2
+{ position: absolute;
+  top: 375px;
+  right: 700px;
+  height: 130px;
+  width: 130px;
+}
+.sec-achievement-image-1:hover,
+.sec-achievement-image-2:hover
+{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.sec-contact{
+  grid-area: contact;
+  font-size: 40px;
+  color: white;
+  padding: 0px 150px 150px 150px;
+  background-image: linear-gradient(to right, rgb(7,70,204), rgba(116,187,194));
+  margin: 0;
+}
+.sec-contact-heading
+{
+  font-size: 60px;
+  color: rgb(226,123,13);
+  margin: 10px;
+  padding-top: 135px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.sec-contact-para
+{   font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding:8px;
+}
+.sec-contact-button
+{  display: flex;
+   justify-content: center;
+   margin: 5px auto;
+   height: 50px;
+   width: 200px;
+   border: 2px solid rgb(3, 61, 30);
+   background: rgb(116,187,194);
+   font-size: 20px;
+   cursor: pointer;
+}
+.sec-contact-button span
+{
+ cursor: pointer;
+}
+.sec-contact-button span:after {
+  content: '\00bb';
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.sec-contact-button:hover span {
+  padding-right: 25px;
+}
+
+.sec-contact-button:hover span:after
+{
+  opacity: 1;
+  right: 0;
+  padding-left: 10px;
+}
+.sec-contact-button:hover
+{ box-shadow: inset 0 0 5px 5px #44f93b;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+#sec-contact-button-link
+{
+  text-decoration: none;
+}
+.footer{
+  grid-area: footer;
+  background: black;
+  color: white;
+  padding: 35px;
+  text-align: center;
+}
+.sec-footer-symbol
+{
+  display: inline-block;
+  color: red;
+}
+.nav-main{
+  grid-area: header;
+  background-image: url(http://news.efinancialcareers.com/binaries/content/gallery/efinancial-careers/articles/2018/09/Coding-language-11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: : none;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+}
+.nav-brand a{
+  color: white;
+  font-size: 50px;
+  display: flex;
+  text-decoration: none;
+  margin: 24px 0 20px 130px;
+}
+.nav-main-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin: 20px 100px;
+  padding-left: 400px;
+}
+.nav-main-item{
+text-decoration: none;
+justify-content: space-between;
+align-items: center;
+list-style: none
+}
+.div-nav{
+  margin: 0;
+}
+.nav-main-item a{
+  color:white;
+  padding: 2rem;
+  text-decoration: none;
+}
+.nav-main-item a:hover{
+  color: rgb(141,155,178);
+  border-bottom: 3px solid rgb(80,90,96);
+  padding-bottom: 0.5rem;
+}
+.sidenav {
+    height: 100vh;
+    width: 90px;
+    position: fixed;
+    z-index: 99999999999;
+    top: 12%;
+    left: 0;
+    padding: 30px 30px;
+    overflow-x: hidden;
+    overflow-y: hidden
+}
+
+.sidenav a:link,
+.sidenav a:visited {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block
+}
+
+.sidenav i {
+    margin: 15px 0;
+    font-size: 120%;
+    color: #e3e7f1;
+    padding-left: 3px;
+}
+
+.v-line {
+    margin-left: 10px;
+    border-left: 4px solid transparent;
+    -o-border-image: linear-gradient(to bottom right, #b827fc 10%, #2c90fc 15%, #b8fd33 25%, #fec837 25%, #fd1892 65%);
+    border-image: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #b827fc), color-stop(15%, #2c90fc), color-stop(25%, #b8fd33), color-stop(25%, #fec837), color-stop(65%, #fd1892));
+    border-image: linear-gradient(to bottom right, #b827fc 10%, #2c90fc 15%, #b8fd33 25%, #fec837 25%, #fd1892 65%);
+    border-image-slice: 1
+}
+
+.v-line1 {
+    height: 30vh;
+    margin-bottom: 10px
+}
+
+.v-line2 {
+    height: 40vh;
+    margin-top: 10px
+}
+
+.sidenav i {
+    -webkit-transition: .2s;
+    transition: .2s
+}
+.linkedin i:hover {
+    color: #0077b5;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25)
+}
+
+.github i:hover {
+    color: #999;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25)
+}
+
+.facebook i:hover {
+    color: #3b5999;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25)
+}
